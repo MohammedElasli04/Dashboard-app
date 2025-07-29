@@ -1,15 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
 
-* {
+* 
+{
     padding: 0;
     margin: 0;
     font-family: "Winky Rough", sans-serif;
     color: azure;
 }
-body {
+body 
+{
     background-color: #001;
+    display: flex;
 }
-nav {
+nav 
+{
     width: 4%;
     height: 100vh;
     padding: 20px;
@@ -18,18 +22,21 @@ nav {
     transition: .7s;
 }
 
-img,#image-box {
+img,#image-box 
+{
     width: 40px;
     height: 40px;
     border-radius: 50%;
 }
 
-ul {
+ul 
+{
     height: 92%;
     list-style: none;
     position: relative;
 }
-ul li a {
+ul li a 
+{
     display: flex;
     padding: 10px;
     margin: 10px 0;
@@ -42,28 +49,100 @@ ul li a {
     text-transform: capitalize;
     transition: .7s;    
 }
-ul li a i {
+ul li a i,section #about div i 
+{
     font-size: 25px;    
 }
-#log-out {
+#log-out 
+{
     position: absolute;
     bottom: 0;
     width: 100%;
 }
-#log-out a {
+#log-out a 
+{
     background-color: #E14434 ;
 }
-ul li a:hover,#log-out a:hover {
+ul li a:hover,#log-out a:hover,section #about #child:hover 
+{
     background-color: #ffffff55;
+    cursor: pointer;
 }
-nav:hover {
+nav:hover 
+{
     width: 20%;
 }
-@media (min-width:1500px) {
-    nav {
+section,#about div 
+{
+    flex-grow: 1;
+    padding: 15px;
+}
+
+section #header 
+{
+    background-color: darkcyan;
+    display: flex;
+    align-items: center;
+    padding: 17px;
+    justify-content: space-between;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+section #about 
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+section #about #child 
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 120px;
+    border-radius: 15px;
+    background-color: #123;
+    transition: .7s;
+}
+section #about #child span h4 
+{
+    font-size: 25px;
+}
+section #about #child span 
+{
+    text-align: center;
+}
+
+@media (max-width: 600px) 
+{
+    section #about 
+    {
+        flex-direction: column;
+    }
+}
+/* @media (min-width: 600px) and (max-width: 900px)
+{
+    section #about 
+    {
+        flex-direction: row;
+    }
+    section #about #child
+    {
+        width: 50%;
+    }
+} */
+
+@media (min-width:1500px) 
+{
+    nav 
+    {
         width: 2%;
     }
-    ul li a {
+    ul li a 
+    {
         margin: 20px 0;
     }
 }
