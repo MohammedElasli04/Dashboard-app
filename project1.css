@@ -63,7 +63,7 @@ ul li a i,section #about div i
 {
     background-color: #E14434 ;
 }
-ul li a:hover,#log-out a:hover,section #about #child:hover 
+ul li a:hover,#log-out a:hover,section #about #child:hover,table tr td:hover  
 {
     background-color: #ffffff55;
     cursor: pointer;
@@ -80,7 +80,7 @@ section,#about div
 
 section #header 
 {
-    background-color: darkcyan;
+    background-color: rgb(4, 129, 255);
     display: flex;
     align-items: center;
     padding: 17px;
@@ -103,6 +103,7 @@ section #about #child
     align-items: center;
     justify-content: space-around;
     height: 120px;
+    flex-basis: 150px;
     border-radius: 15px;
     background-color: #123;
     transition: .7s;
@@ -115,7 +116,31 @@ section #about #child span
 {
     text-align: center;
 }
-
+table {
+    width: 100%;
+    text-align: center;
+    border-spacing: 15px  ;
+}
+table tr td {
+    background-color: #123 ;
+}
+table tr td span {
+    border-radius: 7px;
+    padding: 5px;
+    background-color: green ;
+}
+table tr td:last-child span {
+    background-color: yellow;
+    color: black;
+}
+table tr th {
+    background-color: rgb(4, 129, 255) ;
+}
+table tr th,table tr td {
+    padding: 15px;
+    border-radius: 10px;
+    transition: .7s;
+} 
 @media (max-width: 600px) 
 {
     section #about 
