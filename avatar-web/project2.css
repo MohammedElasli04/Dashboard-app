@@ -1,0 +1,39 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap'); */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Winky Rough", sans-serif;
+    color: aliceblue;
+}
+body {
+    display: flex;
+    height: 100vh;
+    background-image: linear-gradient(to right,rgb(11, 11, 85) 40%,black );
+}
+#container {
+    width: 80%;
+    margin: auto;
+    background-image: url(avatar.webp);
+    height:580px ;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 1px;
+}
+header ul {
+    list-style: none;
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+}
+header h1 {
+    text-transform: uppercase;
+}
+header ul li a {
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 18px;
+}
