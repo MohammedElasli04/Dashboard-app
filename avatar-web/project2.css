@@ -9,13 +9,15 @@
 body {
     display: flex;
     height: 100vh;
-    background-image: linear-gradient(to right,rgb(11, 11, 85) 40%,black );
+    background-image: linear-gradient(to right,rgb(11, 11, 85) 30%,black );
 }
 #container {
-    width: 80%;
+    width: 85%;
     margin: auto;
-    background-image: url(avatar.webp);
-    height:580px ;
+    background-image: linear-gradient(to right,rgba(11, 11, 85, 0.466) 30%,rgba(0, 0, 0, 0.623) ) ,url(avatar.webp);
+    background-repeat: no-repeat;
+    background-position: center; 
+    height:90%;
 }
 header {
     display: flex;
@@ -36,4 +38,31 @@ header ul li a {
     text-transform: capitalize;
     text-decoration: none;
     font-size: 18px;
+    transition: .7s;
+}
+#container footer {
+    margin: 90px 50px;
+    width: 35%;
+}
+#container footer h1 {
+    text-transform: uppercase;
+    font-size: 80px;
+}
+#container footer p {
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    margin: 20px 0;
+}
+#container footer button {
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+header ul li a:hover {
+    text-decoration: underline;
 }
