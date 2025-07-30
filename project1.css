@@ -137,10 +137,13 @@ table tr th {
     background-color: rgb(4, 129, 255) ;
 }
 table tr th,table tr td {
+    text-transform: capitalize;
     padding: 15px;
     border-radius: 10px;
     transition: .7s;
 } 
+
+
 @media (max-width: 600px) 
 {
     section #about 
@@ -148,17 +151,6 @@ table tr th,table tr td {
         flex-direction: column;
     }
 }
-/* @media (min-width: 600px) and (max-width: 900px)
-{
-    section #about 
-    {
-        flex-direction: row;
-    }
-    section #about #child
-    {
-        width: 50%;
-    }
-} */
 
 @media (min-width:1500px) 
 {
