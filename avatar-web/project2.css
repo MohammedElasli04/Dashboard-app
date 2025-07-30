@@ -12,12 +12,16 @@ body {
     background-image: linear-gradient(to right,rgb(11, 11, 85) 30%,black );
 }
 #container {
-    width: 85%;
+    width: 84%;
     margin: auto;
-    background-image: linear-gradient(to right,rgba(11, 11, 85, 0.466) 30%,rgba(0, 0, 0, 0.623) ) ,url(avatar.webp);
+    background-image: linear-gradient(to right,rgba(11, 11, 85, 0.719) 30%,rgba(0, 0, 0, 0.623) ) ,url(avatar.webp);
     background-repeat: no-repeat;
     background-position: center; 
     height:90%;
+    transition: 0.7s;
+}
+#container:hover {
+    background-image: linear-gradient(to right,rgba(11, 11, 85, 0.719) 30%,transparent ) ,url(avatar.webp);
 }
 header {
     display: flex;
