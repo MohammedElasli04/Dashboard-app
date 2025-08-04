@@ -58,7 +58,8 @@ nav ul li a
     text-transform: capitalize;
     transition: 0.5s;
 }
-nav ul li a:hover {
+nav ul li a:hover 
+{
     color: red;
 }
 nav #logo  
@@ -107,6 +108,10 @@ section #info p
     {
         flex-direction: column; 
         justify-content: center;
+    }
+    section 
+    {
+        flex-direction: column-reverse;
     } 
     section #info, section #img-box,nav 
     {
