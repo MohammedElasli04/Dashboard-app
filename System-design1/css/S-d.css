@@ -1,4 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* Variables */
+:root {
+    --main-color: #10cab7;
+}
+
+
+
 * 
 {
     font-family: "Open Sans", sans-serif;
@@ -7,6 +15,7 @@ body {
     height: 100vh;
     background-color: #EEEEEEEE;
 }
+/* Start Header */
 header 
 {
     background-color: white;
@@ -14,9 +23,9 @@ header
 header #container 
 {
     margin: auto;
-    padding-left: 15px;
+    padding-left: 10px;
     height: 71px;
-    padding-right: 15px;
+    padding-right: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -35,10 +44,10 @@ header #container #list-group nav {
 header #container #list-group nav ul {
     position: relative;
     background-color:#EEEEEE ;
-    min-width: 130px;
+    width: 130px;
     list-style: none;
     padding: 0;
-    z-index: 999;
+    z-index: 1;
     margin-top: 12px;
     display: none;
 }
@@ -56,6 +65,7 @@ header #container #list-group nav ul {
     cursor: pointer;
     position: relative;
     padding: 5px 0 5px ;
+    transition: 0.3s;
 }
 #list-group ul li:not(:last-child) {
     margin-bottom: 3px;
@@ -78,6 +88,9 @@ header #container #list-group nav ul {
 }
 #list-group nav ul li:hover::before  {
     width: 100%;
+}
+#list-group nav ul li:hover {
+    background-color: #e6e6e6ee;
 }
 #box {
     width: 20px;
@@ -105,13 +118,35 @@ header #container #list-group nav ul {
 #list-group:hover span:nth-child(2) {
     width: 100%;
 }
+/* End Header */
+/* Start Landing Section */
+#landing {
+    background-image: url(../landing.jpeg);
+    /* background-position: center; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: calc(100vh - 71px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#landing #text-area {
+    width: 300px;
+    text-align: center;
+}
+#landing #text-area h1{
+    margin: 0;
+    color: var(--main-color);
+    font-weight: 800;
+}
+#landing #text-area p {
+    
+}
 
 
 
 
-
-
-
+/* End Landing Section */
 
 /* Media Formatting */
 /* Extra small */
@@ -119,7 +154,7 @@ header #container #list-group nav ul {
 {
     header #container 
     {
-        width: 100%;
+        width: 95%;
     }
 }
 /* Small */
