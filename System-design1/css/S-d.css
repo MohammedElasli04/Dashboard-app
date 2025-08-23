@@ -162,13 +162,13 @@ header #container #list-group nav ul
 }
 /* End Landing Section */
 /* Start Futures Section */
-#futures 
+#futures,#Portfolio 
 {
     padding-top: var(--section-padding) ;
     padding-bottom: var(--section-padding) ;
     background-color: var(--secondary-color);
 }
-#futures #container , #Services #container 
+#futures #container, #Services #container, #Portfolio #container
 {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
@@ -206,17 +206,17 @@ header #container #list-group nav ul
     padding-top: var(--section-padding) ;
     padding-bottom: calc(var(--section-padding) + 30px);
 }
-#Services h1 {
+#Services h1,#Portfolio h1 {
     font-weight: 900;
     font-size: 67px;
     text-transform: capitalize;
-    color:var(--secondary-color);
+    color:rgb(204, 204, 204);
 }
-#Services h1 + p {
+#Services h1 + p,#Portfolio h1 + p {
     margin-top: -63px;
     color: rgb(77 77 77);
 }
-#Services h1,#Services h1 + p  {
+#Services h1,#Services h1 + p,#Portfolio h1,#Portfolio h1 + p  {
     text-align: center;
 }
 #Services #container {
@@ -251,8 +251,25 @@ header #container #list-group nav ul
     background-color: #2c4755;
     z-index: -1;
 }
-
 /* End Services Section */
+/* Start Portfolio Section */
+#Portfolio #container {
+    margin-top: 70px;
+}
+#Portfolio #container #card {
+    background-color: white;
+}
+#Portfolio #container img {
+    max-width: 100%;
+}
+#Portfolio #container #card-body {
+    padding: 15px;
+}
+#Portfolio #container #card-body h4 {
+    font-weight: 900;
+    
+}
+/* End Portfolio Section */
 
 /* Media Formatting */
 /* Extra small */
