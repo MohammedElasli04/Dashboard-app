@@ -231,7 +231,7 @@ header #container #list-group nav ul
 #Services #container #serv-info #data-text h4 {
     margin-top:0 ;
 }
-#Services #container #serv-info #data-text h4 + p {
+#Services #container #serv-info #data-text h4 + p, #Portfolio #container #card-body p {
     color: #636262ee;
     line-height: 1.6;
 }
@@ -267,7 +267,7 @@ header #container #list-group nav ul
 }
 #Portfolio #container #card-body h4 {
     font-weight: 900;
-    
+    margin: 0;
 }
 /* End Portfolio Section */
 
