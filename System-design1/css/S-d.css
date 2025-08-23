@@ -3,6 +3,7 @@
 :root {
     --main-color: #10cab7;
     --secondary-color:#EEEEEEEE;
+    --section-padding:50px;
 }
 * {
     font-family: "Open Sans", sans-serif;
@@ -163,8 +164,8 @@ header #container #list-group nav ul
 /* Start Futures Section */
 #futures 
 {
-    padding-top: 50px ;
-    padding-bottom: 50px ;
+    padding-top: var(--section-padding) ;
+    padding-bottom: var(--section-padding) ;
     background-color: var(--secondary-color);
 }
 #futures #container , #Services #container 
@@ -202,9 +203,8 @@ header #container #list-group nav ul
 /* End Futures Section */
 /* Start Servics Section */
 #Services {
-    padding-top: 40px ;
-    padding-bottom: 40px ;
-    
+    padding-top: var(--section-padding) ;
+    padding-bottom: calc(var(--section-padding) + 30px);
 }
 #Services h1 {
     font-weight: 900;
