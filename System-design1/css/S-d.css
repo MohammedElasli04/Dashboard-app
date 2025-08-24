@@ -202,11 +202,11 @@ header #container #list-group nav ul
 }
 /* End Futures Section */
 /* Start Servics Section */
-#Services {
+#Services,#About {
     padding-top: var(--section-padding) ;
     padding-bottom: calc(var(--section-padding) + 30px);
 }
-#Services h1,#Portfolio h1 {
+#Services h1,#Portfolio h1,#About h1 {
     font-weight: 900;
     font-size: 67px;
     text-transform: capitalize;
@@ -216,7 +216,7 @@ header #container #list-group nav ul
     margin-top: -63px;
     color: rgb(77 77 77);
 }
-#Services h1,#Services h1 + p,#Portfolio h1,#Portfolio h1 + p  {
+#Services h1,#Services h1 + p,#Portfolio h1,#Portfolio h1 + p,#About h1,#About h1 + p  {
     text-align: center;
 }
 #Services #container {
@@ -270,6 +270,9 @@ header #container #list-group nav ul
     margin: 0;
 }
 /* End Portfolio Section */
+/* Start About Section */
+
+/* End About Section */
 
 /* Media Formatting */
 /* Extra small */
