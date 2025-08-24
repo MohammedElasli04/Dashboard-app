@@ -380,6 +380,11 @@ header #container #list-group nav ul
     }
 }
 /* X-Large */
+@media (min-width:992px) and (max-width:1200px) {
+    #About #container #img-container::after {
+        display: none;
+    }
+}
 @media (min-width:1200px) 
 {
     #container 
