@@ -212,7 +212,7 @@ header #container #list-group nav ul
     text-transform: capitalize;
     color:rgb(204, 204, 204);
 }
-#Services h1 + p,#Portfolio h1 + p {
+#Services h1 + p,#Portfolio h1 + p, #About h1 + p {
     margin-top: -63px;
     color: rgb(77 77 77);
 }
@@ -253,7 +253,7 @@ header #container #list-group nav ul
 }
 /* End Services Section */
 /* Start Portfolio Section */
-#Portfolio #container {
+#Portfolio #container, #About #container {
     margin-top: 70px;
 }
 #Portfolio #container #card {
@@ -271,7 +271,31 @@ header #container #list-group nav ul
 }
 /* End Portfolio Section */
 /* Start About Section */
+#About #container {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    gap: 200px;
+}
+#About #container img {
+    width: 250px;
+}
 
+#About #container p:first-child {
+    font-weight: 500;
+    margin-bottom: 35px;
+    line-height: 1.6;
+}
+#About #container hr {
+    width: 50%;
+    margin-left: 0;
+    border-color: var(--main-color);
+    margin-bottom: 35px;
+}
+#About #container p:last-child {
+    color: #636262ee;
+    line-height: 1.6;
+}
 /* End About Section */
 
 /* Media Formatting */
@@ -281,6 +305,10 @@ header #container #list-group nav ul
     #container 
     {
         width: 100%;
+    }
+    #Services #container #serv-info {
+        flex-direction: column;
+        text-align: center;
     }
 }
 /* Small */
